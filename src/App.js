@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+//COMPONENTS
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hola React App
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import NavBar from "./components/NavBar/NavBar";
+class App extends React.Component {
+  render () {
+    return (
+      <div className="App">
+        <NavBar 
+        logo= "Long Black Coffee Roasters"
+        components = "Productos"
+        foro = "Foro"
+        login = "Sing-up"
+        compras= "Mis Compras"
+        contacto= "Contacto"
+        />
+      </div>  
+    );
+  }
 }
 
 export default App;
