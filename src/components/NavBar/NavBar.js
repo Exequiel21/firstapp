@@ -13,9 +13,8 @@ import {
     DropdownItem,
     NavbarText} from 'reactstrap';
 import './NavBar.css';
+import CartWidget from '../CartWidget/CartWidget';
 
-import CartWidget from './CartWidget';
-import './CartWidget.css';
 const NavBarComponent = ({logo, components, login, contacto, compras, foro}) => {
     return (
         <div>
